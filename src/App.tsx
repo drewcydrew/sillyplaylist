@@ -1,16 +1,17 @@
 import "./App.css";
 import spotifyLogo from "./assets/spotify.png";
-import youtubeLogo from "./assets/youtube.png";
+import youtubeLogo from "./assets/youtuebtranparent.webp";
 import songsData from "./data/songs.json";
 
 function App() {
   return (
     <>
-      <h1>Andrews Dumb Playlist</h1>
+      <h1>Drew's Dumb Playlist</h1>
       <p className="byline">
-        Hey thanks for taking the time to check this out, would love to know
-        what compelled you to do so. Here's a collection of songs I think I'll
-        be embarrassed by in about a weeks time.
+        Hey thanks for taking the time to check this out, here's a collection of
+        songs I think I might be embarrassed to have recommended so
+        enthusiastically in about a weeks time. I'm on a big spoken word kick so
+        I hope you're into that.
       </p>
 
       <div className="playlist-actions">
