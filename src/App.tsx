@@ -1,52 +1,17 @@
 import "./App.css";
+import spotifyLogo from "./assets/spotify.png";
+import youtubeLogo from "./assets/youtube.png";
+import songsData from "./data/songs.json";
 
 function App() {
-  const placeholderSongs = [
-    {
-      title: "Mum Does the Washing",
-      artist: "Joshua Idehen",
-      album: "",
-    },
-    {
-      title: "Learn To Swim, Pt. 2",
-      artist: "Joshua Idehen",
-      album: "",
-    },
-    {
-      title: "Theme from Failure, Pt. 1",
-      artist: "The Guest",
-      album: "",
-    },
-    {
-      title: "The Beginning of the End",
-      artist: "Headache",
-      album: "",
-    },
-    {
-      title: "The Party that Never Ends",
-      artist: "Headache",
-      album: "",
-    },
-    {
-      title: "The Person You'd Like To Be",
-      artist: "Barry Can't Swim",
-      album: "",
-    },
-    {
-      title: "Only My Honesty Matters",
-      artist: "Baxter Dury, Étienne de Crécy, Delilah Holliday",
-      album: "",
-    },
-    {
-      title: "Pigs... (In There)",
-      artist: "Robert Wyatt",
-      album: "",
-    },
-  ];
-
   return (
     <>
-      <h1>Andrews Silly Playlist</h1>
+      <h1>Andrews Dumb Playlist</h1>
+      <p className="byline">
+        Hey thanks for taking the time to check this out, would love to know
+        what compelled you to do so. Here's a collection of songs I think I'll
+        be embarrassed by in about a weeks time.
+      </p>
 
       <div className="playlist-actions">
         <a
@@ -55,7 +20,8 @@ function App() {
           rel="noopener noreferrer"
           className="streaming-button spotify"
         >
-          ♫ Open in Spotify
+          <img src={spotifyLogo} className="streaming-icon" alt="Spotify" />
+          Open in Spotify
         </a>
         <a
           href="https://music.youtube.com/playlist?list=PLRA5taBuFM3NfDRTvrX90s6kIi-Qfedoh"
@@ -63,13 +29,18 @@ function App() {
           rel="noopener noreferrer"
           className="streaming-button youtube"
         >
-          🎬 Open in YouTube Music
+          <img
+            src={youtubeLogo}
+            className="streaming-icon"
+            alt="YouTube Music"
+          />
+          Open in YouTube Music
         </a>
       </div>
 
       <div className="song-list">
-        <h2>Songs ({placeholderSongs.length})</h2>
-        {placeholderSongs.map((song, index) => (
+        <h2>Songs ({songsData.length})</h2>
+        {songsData.map((song, index) => (
           <div key={index} className="song-item">
             <div className="song-number">{index + 1}</div>
             <div className="song-info">

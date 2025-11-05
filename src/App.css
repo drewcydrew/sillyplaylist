@@ -41,6 +41,13 @@
   color: #888;
 }
 
+.byline {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
 .playlist-actions {
   margin: 2rem 0;
   display: flex;
@@ -56,16 +63,19 @@
   cursor: pointer;
   transition: background-color 0.3s;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .streaming-button.spotify {
-  background-color: #1db954;
-  color: white;
+  background-color: #ffffff;
+  color: #1db954;
+  border: 2px solid #1db954;
 }
 
 .streaming-button.spotify:hover {
-  background-color: #1ed760;
+  background-color: #f8f8f8;
 }
 
 .streaming-button.youtube {
@@ -75,6 +85,11 @@
 
 .streaming-button.youtube:hover {
   background-color: #ff3333;
+}
+
+.streaming-icon {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .song-list {
