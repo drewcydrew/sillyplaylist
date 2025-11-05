@@ -1,0 +1,119 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.playlist-actions {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.streaming-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.streaming-button.spotify {
+  background-color: #1db954;
+  color: white;
+}
+
+.streaming-button.spotify:hover {
+  background-color: #1ed760;
+}
+
+.streaming-button.youtube {
+  background-color: #ff0000;
+  color: white;
+}
+
+.streaming-button.youtube:hover {
+  background-color: #ff3333;
+}
+
+.song-list {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.song-list h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.song-item:hover {
+  background-color: #f5f5f5;
+}
+
+.song-number {
+  min-width: 2rem;
+  font-weight: bold;
+  color: #666;
+  margin-right: 1rem;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.song-artist {
+  color: #666;
+  font-size: 0.9rem;
+}
