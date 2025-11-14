@@ -12,8 +12,8 @@ function App() {
         songs I think I might be embarrassed to have recommended so
         enthusiastically in about a weeks time. I'm on kind of a spoken word
         kick so I hope you're into that. I'm also really liking the album
-        "Metronomy - BBC6MusicSession" today, maybe just try that if it's more
-        your speed.
+        "Metronomy - BBC Sessions" today, maybe just try that if it's more your
+        speed.
       </p>
 
       <div className="playlist-actions">
